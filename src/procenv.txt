@@ -1,0 +1,642 @@
+procenv:
+  version: procenv 0.24
+  mode: non-privileged
+capabilities(linux):
+  CAP_CHOWN=yes
+  CAP_DAC_OVERRIDE=yes
+  CAP_DAC_READ_SEARCH=yes
+  CAP_FOWNER=yes
+  CAP_FSETID=yes
+  CAP_KILL=yes
+  CAP_SETGID=yes
+  CAP_SETUID=yes
+  CAP_SETPCAP=yes
+  CAP_LINUX_IMMUTABLE=yes
+  CAP_NET_BIND_SERVICE=yes
+  CAP_NET_BROADCAST=yes
+  CAP_NET_ADMIN=yes
+  CAP_NET_RAW=yes
+  CAP_IPC_LOCK=yes
+  CAP_IPC_OWNER=yes
+  CAP_SYS_MODULE=yes
+  CAP_SYS_RAWIO=yes
+  CAP_SYS_CHROOT=yes
+  CAP_SYS_PTRACE=yes
+  CAP_SYS_PACCT=yes
+  CAP_SYS_ADMIN=yes
+  CAP_SYS_BOOT=yes
+  CAP_SYS_NICE=yes
+  CAP_SYS_RESOURCE=yes
+  CAP_SYS_TIME=yes
+  CAP_SYS_TTY_CONFIG=yes
+  CAP_MKNOD=yes
+  CAP_LEASE=yes
+  CAP_AUDIT_WRITE=yes
+  CAP_AUDIT_CONTROL=yes
+  CAP_SETFCAP=yes
+  CAP_MAC_OVERRIDE=yes
+  CAP_MAC_ADMIN=yes
+  CAP_SYSLOG=yes
+  CAP_WAKE_ALARM=yes
+  keep=no
+  securebits=0x0
+  securebits:SECBIT_KEEP_CAPS=0
+  securebits:SECBIT_NO_SETUID_FIXUP=0
+  securebits:SECBIT_NOROOT=0
+cgroup(linux):
+clocks:
+  CLOCK_REALTIME: resolution: 0.000000001s
+  CLOCK_MONOTONIC: resolution: 0.000000001s
+  CLOCK_MONOTONIC_RAW: resolution: 0.000000001s
+  CLOCK_PROCESS_CPUTIME_ID: resolution: 0.000000001s
+  CLOCK_THREAD_CPUTIME_ID: resolution: 0.000000001s
+compiler:
+  name: GCC
+  version: 4.6.3
+  compile date: Jul  1 2013
+  compile time: 01:52:32
+  __STRICT_ANSI__: not defined
+  _POSIX_C_SOURCE: 200809
+  _POSIX_SOURCE: defined
+  _XOPEN_SOURCE: 700
+  _XOPEN_SOURCE_EXTENDED: defined
+  _ISOC95_SOURCE: defined
+  _ISOC99_SOURCE: defined
+  _ISOC11_SOURCE: not defined
+  _LARGEFILE64_SOURCE: defined
+  _FILE_OFFSET_BITS: not defined
+  _BSD_SOURCE: defined
+  _SVID_SOURCE: defined
+  _ATFILE_SOURCE: defined
+  _GNU_SOURCE: defined
+  _REENTRANT: not defined
+  _THREAD_SAFE: not defined
+  _FORTIFY_SOURCE: not defined
+confstr:
+  _CS_GNU_LIBC_VERSION: 'glibc 2.13'
+  _CS_GNU_LIBPTHREAD_VERSION: 'NPTL 2.13'
+  _CS_PATH: '/bin:/usr/bin'
+environment:
+  HOME=/home/reed
+  LANG=en_GB.UTF-8
+  LOGNAME=reed
+  LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+  MAIL=/var/mail/reed
+  OLDPWD=/home/reed/git/procenv-0.24
+  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
+  PWD=/home/reed/git/procenv-0.24/src
+  SHELL=/bin/bash
+  SHLVL=1
+  SSH_CLIENT=192.168.2.20 6598 22
+  SSH_CONNECTION=192.168.2.20 6598 192.168.2.9 22
+  SSH_TTY=/dev/pts/0
+  TERM=xterm
+  USER=reed
+  XDG_SESSION_COOKIE=c76f6c7332c486d041b6528b51a0ef02-1372642458.141594-1228197234
+  _=./procenv
+fds:
+  fd 0: terminal=yes ('/dev/pts/0')
+  fd 1: terminal=no
+  fd 2: terminal=yes ('/dev/pts/0')
+  fd 3: terminal=yes ('/dev/tty')
+fds (linux/proc):
+  '/proc/self/fd/0' -> '/dev/pts/0' (terminal=yes, valid=yes)
+  '/proc/self/fd/1' -> '/home/reed/git/procenv-0.24/src/procenv.tx' (terminal=no, valid=yes)
+  '/proc/self/fd/2' -> '/dev/pts/0' (terminal=yes, valid=yes)
+  '/proc/self/fd/3' -> '/dev/tty' (terminal=yes, valid=yes)
+libs:
+  /usr/lib/arm-linux-gnueabihf/libcofi_rpi.so
+  /lib/arm-linux-gnueabihf/librt.so.1
+  /lib/arm-linux-gnueabihf/libpthread.so.0
+  /lib/arm-linux-gnueabihf/libc.so.6
+  /lib/ld-linux-armhf.so.3
+  /lib/arm-linux-gnueabihf/libnss_compat.so.2
+  /lib/arm-linux-gnueabihf/libnsl.so.1
+  /lib/arm-linux-gnueabihf/libnss_nis.so.2
+  /lib/arm-linux-gnueabihf/libnss_files.so.2
+locale:
+  LANG="en_GB.UTF-8"
+  LANGUAGE=""
+  LC_ADDRESS="en_GB.UTF-8"
+  LC_COLLATE="en_GB.UTF-8"
+  LC_CTYPE="en_GB.UTF-8"
+  LC_IDENTIFICATION="en_GB.UTF-8"
+  LC_MEASUREMENT="en_GB.UTF-8"
+  LC_MESSAGES="en_GB.UTF-8"
+  LC_MONETARY="en_GB.UTF-8"
+  LC_NAME="en_GB.UTF-8"
+  LC_NUMERIC="en_GB.UTF-8"
+  LC_PAPER="en_GB.UTF-8"
+  LC_TELEPHONE="en_GB.UTF-8"
+  LC_TIME="en_GB.UTF-8"
+  LC_ALL=""
+limits:
+  RLIMIT_AS (soft=4294967295 (max), hard=4294967295 (max))
+  RLIMIT_CORE (soft=0, hard=4294967295 (max))
+  RLIMIT_CPU (soft=4294967295 (max), hard=4294967295 (max))
+  RLIMIT_DATA (soft=4294967295 (max), hard=4294967295 (max))
+  RLIMIT_FSIZE (soft=4294967295 (max), hard=4294967295 (max))
+  RLIMIT_LOCKS (soft=4294967295 (max), hard=4294967295 (max))
+  RLIMIT_MEMLOCK (soft=65536, hard=65536)
+  RLIMIT_MSGQUEUE (soft=819200, hard=819200)
+  RLIMIT_NICE (soft=0, hard=0)
+  RLIMIT_NOFILE (soft=1024, hard=4096)
+  RLIMIT_NPROC (soft=2800, hard=2800)
+  RLIMIT_RSS (soft=4294967295 (max), hard=4294967295 (max))
+  RLIMIT_RTPRIO (soft=0, hard=0)
+  RLIMIT_SIGPENDING (soft=2800, hard=2800)
+  RLIMIT_STACK (soft=8388608, hard=4294967295 (max))
+misc:
+  umask: 0022
+  current directory (cwd): '/home/reed/git/procenv-0.24/src'
+  root: '/'
+  chroot: no
+  process endian: unknown
+  dumpable: yes
+  floating point emulation: unknown
+  floating point exceptions: unknown
+  process name: procenv
+  parent death signal: disabled
+  secure computing: disabled
+  process timing: statistical
+  machine-check exception: system default
+  timer slack: 50000ns
+  Linux Security Module: unknown
+  LSM context: unknown
+  container: no
+  cpu: 1 of 1
+  scheduler: SCHED_OTHER
+  scheduler priority: process=0, process group=0, user=0
+  memory page size: 4096 bytes
+  kernel headers version: 3.2.41
+mounts:
+  fsname='rootfs', dir='/', type='rootfs', opts='rw,noatime', dev=(major:0, minor:13)
+    pathconf for path '/':
+      _PC_LINK_MAX=127
+      _PC_MAX_CANON=255
+      _PC_MAX_INPUT=255
+      _PC_NAME_MAX=242
+      _PC_PATH_MAX=4096
+      _PC_PIPE_BUF=4096
+      _PC_CHOWN_RESTRICTED=1
+      _PC_NO_TRUNC=1
+      _PC_VDISABLE=0
+  fsname='proc', dir='/proc', type='proc', opts='rw,nosuid,nodev,noexec,relatime', dev=(major:0, minor:3)
+    pathconf for path '/proc':
+      _PC_LINK_MAX=127
+      _PC_MAX_CANON=255
+      _PC_MAX_INPUT=255
+      _PC_NAME_MAX=255
+      _PC_PATH_MAX=4096
+      _PC_PIPE_BUF=4096
+      _PC_CHOWN_RESTRICTED=1
+      _PC_NO_TRUNC=1
+      _PC_VDISABLE=0
+  fsname='sysfs', dir='/sys', type='sysfs', opts='rw,nosuid,nodev,noexec,relatime', dev=(major:0, minor:12)
+    pathconf for path '/sys':
+      _PC_LINK_MAX=127
+      _PC_MAX_CANON=255
+      _PC_MAX_INPUT=255
+      _PC_NAME_MAX=255
+      _PC_PATH_MAX=4096
+      _PC_PIPE_BUF=4096
+      _PC_CHOWN_RESTRICTED=1
+      _PC_NO_TRUNC=1
+      _PC_VDISABLE=0
+  fsname='dev', dir='/dev', type='devtmpfs', opts='rw,relatime,size=179200k,nr_inodes=44800,mode=755', dev=(major:0, minor:5)
+    pathconf for path '/dev':
+      _PC_LINK_MAX=127
+      _PC_MAX_CANON=255
+      _PC_MAX_INPUT=255
+      _PC_NAME_MAX=255
+      _PC_PATH_MAX=4096
+      _PC_PIPE_BUF=4096
+      _PC_CHOWN_RESTRICTED=1
+      _PC_NO_TRUNC=1
+      _PC_VDISABLE=0
+  fsname='/dev/mmcblk0p2', dir='/mnt', type='ext4', opts='rw,noatime,data=ordered', dev=(major:0, minor:13)
+    pathconf for path '/mnt':
+      _PC_LINK_MAX=127
+      _PC_MAX_CANON=255
+      _PC_MAX_INPUT=255
+      _PC_NAME_MAX=242
+      _PC_PATH_MAX=4096
+      _PC_PIPE_BUF=4096
+      _PC_CHOWN_RESTRICTED=1
+      _PC_NO_TRUNC=1
+      _PC_VDISABLE=0
+WARNING: unable to stat path '/squashfs'
+  fsname='/dev/loop0', dir='/squashfs', type='squashfs', opts='ro,relatime', dev=(major:-1, minor:-1)
+    pathconf for path '/squashfs':
+      _PC_LINK_MAX=-1
+      _PC_MAX_CANON=255
+      _PC_MAX_INPUT=255
+      _PC_NAME_MAX=-1
+      _PC_PATH_MAX=4096
+      _PC_PIPE_BUF=4096
+      _PC_CHOWN_RESTRICTED=-1
+      _PC_NO_TRUNC=1
+      _PC_VDISABLE=0
+  fsname='none', dir='/', type='aufs', opts='rw,relatime,si=9d3dd374', dev=(major:0, minor:13)
+    pathconf for path '/':
+      _PC_LINK_MAX=127
+      _PC_MAX_CANON=255
+      _PC_MAX_INPUT=255
+      _PC_NAME_MAX=242
+      _PC_PATH_MAX=4096
+      _PC_PIPE_BUF=4096
+      _PC_CHOWN_RESTRICTED=1
+      _PC_NO_TRUNC=1
+      _PC_VDISABLE=0
+  fsname='tmpfs', dir='/run', type='tmpfs', opts='rw,nosuid,noexec,relatime,size=47716k,mode=755', dev=(major:0, minor:14)
+    pathconf for path '/run':
+      _PC_LINK_MAX=127
+      _PC_MAX_CANON=255
+      _PC_MAX_INPUT=255
+      _PC_NAME_MAX=255
+      _PC_PATH_MAX=4096
+      _PC_PIPE_BUF=4096
+      _PC_CHOWN_RESTRICTED=1
+      _PC_NO_TRUNC=1
+      _PC_VDISABLE=0
+  fsname='tmpfs', dir='/run/lock', type='tmpfs', opts='rw,nosuid,nodev,noexec,relatime,size=5120k', dev=(major:0, minor:15)
+    pathconf for path '/run/lock':
+      _PC_LINK_MAX=127
+      _PC_MAX_CANON=255
+      _PC_MAX_INPUT=255
+      _PC_NAME_MAX=255
+      _PC_PATH_MAX=4096
+      _PC_PIPE_BUF=4096
+      _PC_CHOWN_RESTRICTED=1
+      _PC_NO_TRUNC=1
+      _PC_VDISABLE=0
+  fsname='tmpfs', dir='/run/shm', type='tmpfs', opts='rw,nosuid,nodev,noexec,relatime,size=95420k', dev=(major:0, minor:16)
+    pathconf for path '/run/shm':
+      _PC_LINK_MAX=127
+      _PC_MAX_CANON=255
+      _PC_MAX_INPUT=255
+      _PC_NAME_MAX=255
+      _PC_PATH_MAX=4096
+      _PC_PIPE_BUF=4096
+      _PC_CHOWN_RESTRICTED=1
+      _PC_NO_TRUNC=1
+      _PC_VDISABLE=0
+  fsname='devpts', dir='/dev/pts', type='devpts', opts='rw,nosuid,noexec,relatime,gid=5,mode=620', dev=(major:0, minor:10)
+    pathconf for path '/dev/pts':
+      _PC_LINK_MAX=127
+      _PC_MAX_CANON=255
+      _PC_MAX_INPUT=255
+      _PC_NAME_MAX=255
+      _PC_PATH_MAX=4096
+      _PC_PIPE_BUF=4096
+      _PC_CHOWN_RESTRICTED=1
+      _PC_NO_TRUNC=1
+      _PC_VDISABLE=0
+oom(linux):
+  oom_score=2
+  oom_adj=0
+  oom_score_adj=0
+platform:
+  operating system: Linux
+  architecture: ARMhf
+  kernel bits: 32
+  executable bits: 32
+  code endian: little
+  data model: ILP32 (4/4/4)
+process:
+  process id (pid): 4274
+  parent process id (ppid): 2510
+  session id (sid): 2510 (leader=no)
+  name: 'procenv'
+  ancestry: 4274 ('procenv'), 2510 ('bash'), 2509 ('sshd'), 2502 ('sshd'), 2339 ('sshd'), 1 ('init')
+  process group id: 4274 (leader=yes)
+  foreground process group: 4274
+  terminal: '/dev/tty'
+  has controlling terminal: yes
+  on console: no
+  real user id (uid): 1001 ('reed')
+  effective user id (euid): 1001 ('reed')
+  saved set-user-id (suid): 1001 ('reed')
+  real group id (gid): 1002 ('reed')
+  effective group id (egid): 1002 ('reed')
+  saved set-group-id (sgid): 1002 ('reed')
+  login name: 'reed'
+  passwd: name='reed', gecos='Reed,,,', dir='/home/reed', shell='/bin/bash'
+  groups: 'reed' (1002)
+ranges:
+  char:
+    unsigned: 0 to 255 (0.000000e+00 to 2.550000e+02, 0x00 to 0xff)
+    signed: 0 to 255
+  short int:
+    unsigned: 0 to 65535 (0.000000e+00 to 6.553500e+04, 0x0000 to 0xffff)
+    signed: -32768 to 32767
+  int:
+    unsigned: 0 to 4294967295 (0.000000e+00 to 4.294967e+09, 0x00000000 to 0xffffffff)
+    signed: -2147483648 to 2147483647
+  long int:
+    unsigned: 0 to 4294967295 (0.000000e+00 to 4.294967e+09, 0x00000000 to 0xffffffff)
+    signed: -2147483648 to 2147483647
+  long long int:
+    unsigned: 0 to 18446744073709551615 (0.000000e+00 to 1.844674e+19, 0x0000000000000000 to 0xffffffffffffffff)
+    signed: -9223372036854775808 to 9223372036854775807
+  float:
+    signed: 1.175494e-38 to 3.402823e+38
+  double:
+    signed: 2.225074e-308 to 1.797693e+308
+  long double:
+    signed: 2.225074e-308 to 1.797693e+308
+rusage:
+  ru_maxrss=2160
+  ru_ixrss=0
+  ru_idrss=0
+  ru_isrss=0
+  ru_minflt=454
+  ru_majflt=0
+  ru_nswap=0
+  ru_inblock=0
+  ru_oublock=24
+  ru_msgsnd=0
+  ru_msgrcv=0
+  ru_nsignals=0
+  ru_nvcsw=0
+  ru_nivcsw=1
+signals:
+  SIGHUP ('Hangup', 1): blocked=no, ignored=no
+  SIGINT ('Interrupt', 2): blocked=no, ignored=no
+  SIGQUIT ('Quit', 3): blocked=no, ignored=no
+  SIGILL ('Illegal instruction', 4): blocked=no, ignored=no
+  SIGTRAP ('Trace/breakpoint trap', 5): blocked=no, ignored=no
+  SIGABRT ('Aborted', 6): blocked=no, ignored=no
+  SIGBUS ('Bus error', 7): blocked=no, ignored=no
+  SIGFPE ('Floating point exception', 8): blocked=no, ignored=no
+  SIGKILL ('Killed', 9): blocked=no, ignored=no
+  SIGUSR1 ('User defined signal 1', 10): blocked=no, ignored=no
+  SIGSEGV ('Segmentation fault', 11): blocked=no, ignored=no
+  SIGUSR2 ('User defined signal 2', 12): blocked=no, ignored=no
+  SIGPIPE ('Broken pipe', 13): blocked=no, ignored=no
+  SIGALRM ('Alarm clock', 14): blocked=no, ignored=no
+  SIGTERM ('Terminated', 15): blocked=no, ignored=no
+  SIGSTKFLT ('Stack fault', 16): blocked=no, ignored=no
+  SIGCHLD|SIGCLD ('Child exited', 17): blocked=no, ignored=no
+  SIGCONT ('Continued', 18): blocked=no, ignored=no
+  SIGSTOP ('Stopped (signal)', 19): blocked=no, ignored=no
+  SIGTSTP ('Stopped', 20): blocked=no, ignored=no
+  SIGTTIN ('Stopped (tty input)', 21): blocked=no, ignored=no
+  SIGTTOU ('Stopped (tty output)', 22): blocked=no, ignored=no
+  SIGURG ('Urgent I/O condition', 23): blocked=no, ignored=no
+  SIGXCPU ('CPU time limit exceeded', 24): blocked=no, ignored=no
+  SIGXFSZ ('File size limit exceeded', 25): blocked=no, ignored=no
+  SIGVTALRM ('Virtual timer expired', 26): blocked=no, ignored=no
+  SIGPROF ('Profiling timer expired', 27): blocked=no, ignored=no
+  SIGWINCH ('Window changed', 28): blocked=no, ignored=no
+  SIGIO ('I/O possible', 29): blocked=no, ignored=no
+  SIGPWR ('Power failure', 30): blocked=no, ignored=no
+  SIGSYS ('Bad system call', 31): blocked=no, ignored=no
+sizeof:
+  bits/byte (CHAR_BIT): 8
+  sizeof (char): 1 byte
+  sizeof (short int): 2 bytes
+  sizeof (int): 4 bytes
+  sizeof (long int): 4 bytes
+  sizeof (long long int): 8 bytes
+  sizeof (float): 4 bytes
+  sizeof (double): 8 bytes
+  sizeof (long double): 8 bytes
+  sizeof (size_t): 4 bytes
+  sizeof (ssize_t): 4 bytes
+  sizeof (ptrdiff_t): 4 bytes
+  sizeof (void *): 4 bytes
+  sizeof (wchar_t): 4 bytes
+  sizeof (intmax_t): 8 bytes
+  sizeof (uintmax_t): 8 bytes
+  sizeof (imaxdiv_t): 16 bytes
+  sizeof (intptr_t): 4 bytes
+  sizeof (uintptr_t): 4 bytes
+  sizeof (time_t): 4 bytes
+  sizeof (clock_t): 4 bytes
+  sizeof (sig_atomic_t): 4 bytes
+  sizeof (off_t): 4 bytes
+  sizeof (fpos_t): 12 bytes
+  sizeof (mode_t): 4 bytes
+  sizeof (pid_t): 4 bytes
+  sizeof (uid_t): 4 bytes
+  sizeof (gid_t): 4 bytes
+  sizeof (rlim_t): 4 bytes
+  sizeof (fenv_t): 4 bytes
+  sizeof (fexcept_t): 4 bytes
+  sizeof (wint_t): 4 bytes
+  sizeof (div_t): 8 bytes
+  sizeof (ldiv_t): 8 bytes
+  sizeof (lldiv_t): 16 bytes
+  sizeof (mbstate_t): 8 bytes
+stat:
+  argv[0]: './procenv'
+  real path: '/home/reed/git/procenv-0.24/src/procenv'
+  dev: major=0, minor=13
+  inode: 7159
+  permissions: 0755 (-rwxr-xr-x)
+  hard links: 1
+  user id (uid): 1001 ('reed')
+  group id (gid): 1002 ('indiecity')
+  size: 132056 bytes (264 512-byte blocks)
+  atime: 1372643579 (Mon Jul  1 01:52:59 2013)
+  mtime: 1372643580 (Mon Jul  1 01:53:00 2013)
+  ctime: 1372643580 (Mon Jul  1 01:53:00 2013)
+sysconf:
+  ARG_MAX(_SC_ARG_MAX)=2097152
+  BC_BASE_MAX(_SC_BC_BASE_MAX)=99
+  BC_DIM_MAX(_SC_BC_DIM_MAX)=2048
+  BC_SCALE_MAX(_SC_BC_SCALE_MAX)=99
+  BC_STRING_MAX(_SC_BC_STRING_MAX)=1000
+  CHILD_MAX(_SC_CHILD_MAX)=2800
+  _SC_CLK_TCK=100
+  COLL_WEIGHTS_MAX(_SC_COLL_WEIGHTS_MAX)=255
+  EXPR_NEST_MAX(_SC_EXPR_NEST_MAX)=32
+  HOST_NAME_MAX(_SC_HOST_NAME_MAX)=64
+  LINE_MAX(_SC_LINE_MAX)=2048
+  LOGIN_NAME_MAX(_SC_LOGIN_NAME_MAX)=256
+  OPEN_MAX(_SC_OPEN_MAX)=1024
+  PAGESIZE(_SC_PAGESIZE)=4096
+  RE_DUP_MAX(_SC_RE_DUP_MAX)=32767
+  STREAM_MAX(_SC_STREAM_MAX)=16
+  SYMLOOP_MAX(_SC_SYMLOOP_MAX)=-1
+  TTY_NAME_MAX(_SC_TTY_NAME_MAX)=32
+  TZNAME_MAX(_SC_TZNAME_MAX)=6
+  _POSIX_VERSION(_SC_VERSION)=200809
+  BC_BASE_MAX(_SC_BC_BASE_MAX)=99
+  BC_DIM_MAX(_SC_BC_DIM_MAX)=2048
+  BC_SCALE_MAX(_SC_BC_SCALE_MAX)=99
+  BC_STRING_MAX(_SC_BC_STRING_MAX)=1000
+  COLL_WEIGHTS_MAX(_SC_COLL_WEIGHTS_MAX)=255
+  EXPR_NEST_MAX(_SC_EXPR_NEST_MAX)=32
+  LINE_MAX(_SC_LINE_MAX)=2048
+  RE_DUP_MAX(_SC_RE_DUP_MAX)=32767
+  POSIX2_VERSION(_SC_2_VERSION)=200809
+  POSIX2_C_DEV(_SC_2_C_DEV)=200809
+  POSIX2_FORT_DEV(_SC_2_FORT_DEV)=-1
+  POSIX2_FORT_RUN(_SC_2_FORT_RUN)=-1
+  _POSIX2_LOCALEDEF(_SC_2_LOCALEDEF)=200809
+  POSIX2_SW_DEV(_SC_2_SW_DEV)=200809
+  _SC_PHYS_PAGES=119287
+  _SC_AVPHYS_PAGES=40032
+  _SC_NPROCESSORS_CONF=1
+  _SC_NPROCESSORS_ONLN=1
+  _POSIX_ADVISORY_INFO(_SC_ADVISORY_INFO)=200809
+  _POSIX_ASYNCHRONOUS_IO(_SC_ASYNCHRONOUS_IO)=200809
+  _POSIX_BARRIERS(_SC_BARRIERS)=200809
+  _POSIX_CHOWN_RESTRICTED=2097152
+  _POSIX_CLOCK_SELECTION(_SC_CLOCK_SELECTION)=200809
+  _POSIX_CPUTIME(_SC_CPUTIME)=200809
+  _POSIX_FILE_LOCKING(_SC_FILE_LOCKING)=-1
+  _POSIX_FSYNC(_SC_FSYNC)=200809
+  _POSIX_JOB_CONTROL(_SC_JOB_CONTROL)=1
+  _POSIX_MAPPED_FILES(_SC_MAPPED_FILES)=200809
+  _POSIX_MEMLOCK(_SC_MEMLOCK)=200809
+  _POSIX_MEMLOCK_RANGE(_SC_MEMLOCK_RANGE)=200809
+  _POSIX_MEMORY_PROTECTION(_SC_MEMORY_PROTECTION)=200809
+  _POSIX_MESSAGE_PASSING(_SC_MESSAGE_PASSING)=200809
+  _POSIX_MONOTONIC_CLOCK(_SC_MONOTONIC_CLOCK)=200809
+  _POSIX_MULTI_PROCESS(_SC_MULTI_PROCESS)=-1
+  _POSIX_PRIORITIZED_IO(_SC_PRIORITIZED_IO)=200809
+  _POSIX_PRIORITY_SCHEDULING(_SC_PRIORITY_SCHEDULING)=200809
+  _POSIX_RAW_SOCKETS=-1
+  _POSIX_READER_WRITER_LOCKS(_SC_READER_WRITER_LOCKS)=200809
+  _POSIX_REALTIME_SIGNALS(_SC_REALTIME_SIGNALS)=200809
+  _POSIX_REGEXP(_SC_REGEXP)=1
+  _POSIX_SAVED_IDS(_SC_SAVED_IDS)=1
+  _POSIX_SEMAPHORES(_SC_SEMAPHORES)=200809
+  _POSIX_SHARED_MEMORY_OBJECTS(_SC_SHARED_MEMORY_OBJECTS)=200809
+  _POSIX_SHELL(_SC_SHELL)=1
+  _POSIX_SPAWN(_SC_SPAWN)=200809
+  _POSIX_SPIN_LOCKS(_SC_SPIN_LOCKS)=200809
+  _POSIX_SPORADIC_SERVER(_SC_SPORADIC_SERVER)=-1
+  _POSIX_SYNCHRONIZED_IO(_SC_SYNCHRONIZED_IO)=200809
+  _POSIX_THREAD_ATTR_STACKSIZE(_SC_THREAD_ATTR_STACKSIZE)=200809
+  _POSIX_THREAD_CPUTIME(_SC_THREAD_CPUTIME)=200809
+  _POSIX_THREAD_PRIO_INHERIT(_SC_THREAD_PRIO_INHERIT)=200809
+  _POSIX_THREAD_PRIO_PROTECT(_SC_THREAD_PRIO_PROTECT)=200809
+  _POSIX_THREAD_PRIORITY_SCHEDULING(_SC_THREAD_PRIORITY_SCHEDULING)=200809
+  _POSIX_THREAD_PROCESS_SHARED(_SC_THREAD_PROCESS_SHARED)=200809
+  _POSIX_THREAD_SAFE_FUNCTIONS(_SC_THREAD_SAFE_FUNCTIONS)=200809
+  _POSIX_THREAD_SPORADIC_SERVER(_SC_THREAD_SPORADIC_SERVER)=-1
+  _POSIX_THREADS(_SC_THREADS)=200809
+  _POSIX_TIMEOUTS(_SC_TIMEOUTS)=200809
+  _POSIX_TIMERS(_SC_TIMERS)=200809
+  _POSIX_TRACE(_SC_TRACE)=-1
+  _POSIX_TRACE_EVENT_FILTER(_SC_TRACE_EVENT_FILTER)=-1
+  _POSIX_TRACE_INHERIT(_SC_TRACE_INHERIT)=-1
+  _POSIX_TRACE_LOG(_SC_TRACE_LOG)=-1
+  _POSIX_VDISABLE=2097152
+  _XOPEN_CRYPT=2800
+  _XOPEN_LEGACY=2800
+  _XOPEN_REALTIME=2800
+  _XOPEN_REALTIME_THREADS=2800
+  _XOPEN_UNIX=2800
+threads:
+  thread stack size: 8388608 bytes
+  thread scope: PTHREAD_SCOPE_SYSTEM
+  thread guard size: 4096 bytes
+  thread scheduler: SCHED_OTHER
+  thread scheduler priority: 0
+  thread inherit scheduler: PTHREAD_INHERIT_SCHED
+  thread concurrency: 0
+time:
+  raw: 1372643826.892812209
+  local: Mon Jul  1 01:57:06 2013
+  ISO: 2013-06-01T01:57
+timezone:
+  tzname[0]='UTC'
+  tzname[1]='UTC'
+  timezone=0
+  daylight=0
+tty:
+  c_iflag=0x500
+  c_iflag:IGNBRK=0
+  c_iflag:BRKINT=0
+  c_iflag:IGNPAR=0
+  c_iflag:PARMRK=0
+  c_iflag:INPCK=0
+  c_iflag:ISTRIP=0
+  c_iflag:INLCR=0
+  c_iflag:IGNCR=0
+  c_iflag:ICRNL=1
+  c_iflag:IUCLC=0
+  c_iflag:IXON=1
+  c_iflag:IXANY=0
+  c_iflag:IXOFF=0
+  c_iflag:IMAXBEL=0
+  c_iflag:IUTF8=0
+  c_oflag=0x5
+  c_oflag:OPOST=1
+  c_oflag:OLCUC=0
+  c_oflag:ONLCR=1
+  c_oflag:OCRNL=0
+  c_oflag:ONOCR=0
+  c_oflag:ONLRET=0
+  c_oflag:OFILL=0
+  c_oflag:OFDEL=0
+  c_oflag:NLDLY=0
+  c_oflag:CRDLY=0
+  c_oflag:TABDLY=0
+  c_oflag:BSDLY=0
+  c_oflag:VTDLY=0
+  c_oflag:FFDLY=0
+  c_cflag=0xbf
+    [c_cflag:input baud speed=B38400]
+    [c_cflag:output baud speed=B38400]
+  c_cflag:CBAUDEX=0
+  c_cflag:CSIZE=1
+  c_cflag:CSTOPB=0
+  c_cflag:CREAD=1
+  c_cflag:PARENB=0
+  c_cflag:PARODD=0
+  c_cflag:HUPCL=0
+  c_cflag:CLOCAL=0
+  c_cflag:CIBAUD=0
+  c_cflag:CMSPAR=0
+  c_cflag:CRTSCTS=0
+  c_lflag=0x8a3b
+  c_lflag:ISIG=1
+  c_lflag:XCASE=0
+  c_lflag:ICANON=1
+  c_lflag:ECHO=1
+  c_lflag:ECHOE=1
+  c_lflag:ECHOK=1
+  c_lflag:ECHONL=0
+  c_lflag:ECHOCTL=1
+  c_lflag:ECHOPRT=0
+  c_lflag:ECHOKE=1
+  c_lflag:FLUSHO=0
+  c_lflag:NOFLSH=0
+  c_lflag:TOSTOP=0
+  c_lflag:PENDIN=0
+  c_lflag:IEXTEN=1
+  c_cc:
+    c_cc[VINTR]:0x3
+    c_cc[VQUIT]:0x1c
+    c_cc[VERASE]:0x7f
+    c_cc[VKILL]:0x15
+    c_cc[VEOF]:0x4
+    c_cc[VTIME]:0x0
+    c_cc[VMIN]:0x1
+    c_cc[VSWTC]:0x0
+    c_cc[VSTART]:0x11
+    c_cc[VSTOP]:0x13
+    c_cc[VSUSP]:0x1a
+    c_cc[VEOL]:0x0
+    c_cc[VREPRINT]:0x12
+    c_cc[VDISCARD]:0xf
+    c_cc[VWERASE]:0x17
+    c_cc[VLNEXT]:0x16
+    c_cc[VEOL2]:0x0
+  winsize:ws_row=24
+  winsize:ws_col=80
+  winsize:ws_xpixel=0
+  winsize:ws_ypixel=0
+uname:
+  sysname: Linux
+  nodename: raspberrypi
+  release: 3.6.11-rpi-aufs
+  version: #1 PREEMPT Sun May 26 18:32:32 CEST 2013
+  machine: armv6l
+  domainname: (none)

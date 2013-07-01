@@ -1,0 +1,123 @@
+0.24	2013-06-28
+
+	* Packaging update for automake-1.13 to ensure procenv output
+	  available in build logs.
+
+0.23	2013-05-31
+
+	* Tolerate Linux environments where /proc is not mounted.
+	* Fix kFreeBSD detection and add support for IBM SystemZ
+	  environments.
+
+0.22	2013-05-17
+
+	* Added --platform option which contains some information that
+	  was formally in --misc output, but also now includes the
+	  number of "architecture bits" (executable bits) and the
+	  programming model for the platform (such as LP32/ILP64).
+
+0.21	2013-04-07
+
+	* Various improvements from Mike Miller including umask
+	  restoration fix.
+	* Display terminal attribute locked status (Linux only).
+
+0.20	2013-01-15
+
+	* Sort environment variables and groups in locale-aware fashion.
+	* FreeBSD fix for LC_NAME.
+
+0.19	2012-12-17
+
+	* Fixed an assertion failure if running with nice -1.
+
+0.18	2012-12-06
+
+	* Improvements to Apparmor+SELinux handling
+	  (Mike Miller).
+	* prctl fixes (thanks Dave Love).
+
+0.17	2012-12-06
+
+	* Further locale improvements from Dave Love.
+	* Cosmetic man-page improvements.
+
+0.16	2012-12-02
+
+	* Add support for RHEL builds (thanks Dave Love).
+	* Locale improvements.
+	* Correction for detecting ARMHF.
+	* Environment variables are now sorted to make diffing easier.
+	* ChangeLog now reflects bzr branch history.
+
+0.15	2012-11-28
+
+	* Fixes for Hurd.
+
+0.14	2012-11-28
+
+	* Scheduler and non-Linux platform fixes for --threads.
+
+0.13	2012-11-26
+
+	* Added --threads option.
+	* Additional resilience to running in unusual environments.
+
+0.12	2012-11-22
+
+	* Added show_compiler_details test.
+	* Fix for GNU/Hurd.
+
+0.11	2012-11-21
+
+	* Don't allow prctl to fail, even for environments
+	  such as chroots where libc defines the symbols, but
+	  the kernel outside the chroot does not implement
+	  the features.
+
+0.10	2012-11-20
+
+	* Further platform fixes identified by building on
+	  Debian-supported buildd's.
+	* Added locale output.
+
+0.9	2012-11-19
+
+	* Platform fixes identified by building on Debian-supported
+	  platforms.
+	* Improved man page.
+
+0.8	2012-11-16
+
+	* Man page updates.
+	* Added resource usage.
+	* Added more types for --sizeof.
+
+0.7	2012-11-05
+
+	* Fixes for non-x86 kernels and specific kernel versions.
+
+0.6	2012-10-27
+
+	* AppArmor, capabilities and prctl(2) contributions from
+	  Kees Cook.
+
+0.5	2012-10-27
+
+	* Fluff removal.
+
+0.4	2012-10-27
+
+	* Path resolution fixes and strsep() safety. 
+
+0.3	2012-10-26
+
+	* Man page fixes.
+
+0.2	2012-10-26
+
+	* Include man page in distribution.
+
+0.1	2012-10-25
+
+	* Initial public release.
